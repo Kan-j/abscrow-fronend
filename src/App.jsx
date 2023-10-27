@@ -8,18 +8,28 @@ import TransactionProgress from './pages/TransactionProgress'
 import AdminPanel from './pages/AdminPanel'
 import AdminOrders from './pages/AdminOrders'
 
+import {
+  Route,
+  RouterProvider,
+  createBrowserRouter,
+  createRoutesFromElements,
+} from "react-router-dom";
+
 function App() {
 
-  return (
-    <>
-      {/* <SignUp/> */}
-      {/* <Login/> */}
-      {/* <LandingPage/> */}
-      {/* <AdminPanel/> */}
-      {/* <AdminOrders/> */}
-      <TransactionProgress glowSection="Processing"/>
-    </>
-  )
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="login" element={<Login />} />
+        <Route exact path="signup" element={<SignUp />} />
+        <Route exact path="adminpanel" element={<AdminPanel />} />
+        <Route exact path="orders" element={<AdminOrders />} />
+        <Route exact path="transaction-progress" element={<TransactionProgress />} />
+      </>
+    )
+  );
+  return <RouterProvider router={router} />;
 }
 
 export default App
