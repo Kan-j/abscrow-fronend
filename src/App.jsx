@@ -14,10 +14,10 @@ function App() {
     <>
       {/* <SignUp/> */}
       {/* <Login/> */}
-      {/* <LandingPage/> */}
+      <LandingPage/>
       {/* <AdminPanel/> */}
       {/* <AdminOrders/> */}
-      <TransactionProgress glowSection="Processing"/>
+      {/* <TransactionProgress glowSection="Processing"/> */}
     </>
   )
 }
