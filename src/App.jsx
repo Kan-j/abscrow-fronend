@@ -16,8 +16,8 @@ function App() {
       {/* <Login/> */}
       {/* <LandingPage/> */}
       {/* <AdminPanel/> */}
-      <AdminOrders/>
-      {/* <TransactionProgress glowSection="Processing"/> */}
+      {/* <AdminOrders/> */}
+      <TransactionProgress glowSection="Processing"/>
     </>
   )
 }
