@@ -10,7 +10,7 @@ import Path from '../assets/Path.svg'
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { BsBalloon, BsCardImage, BsCloudCheck, BsFacebook, BsInstagram, BsJournalArrowUp, BsSortNumericUpAlt, BsTiktok } from 'react-icons/bs'
-
+import Logo from '../assets/AbscrowLogo1.png'
 
 export default function LandingPage() {
     const carouselContainerStyle = {
@@ -19,9 +19,11 @@ export default function LandingPage() {
   return (
     <section className='min-h-screen'>
         {/* Navigation Bar */}
-        <nav className='flex justify-between mx-10 h-14 items-center'>
-           <a href="" className='font-semibold text-base text-red-700'>Abscrow</a>
-            <section className='flex gap-8'>
+        <nav className='flex justify-center mx-10 h-14 items-center'>
+           <a href="" className='font-semibold text-base text-red-700'>
+            <img src={Logo} className='mt-10 w-20' alt="" />
+           </a>
+            {/* <section className='flex gap-8'>
                 <a href="" className='text-gray-600 font-medium text-base hover:text-red-500 transition duration-300'>Home</a>
                 <a href="" className='text-gray-600 font-medium text-base hover:text-red-500 transition duration-300'>Feature</a>
                 <a href="" className='text-gray-600 font-medium text-base hover:text-red-500 transition duration-300'>Product</a>
@@ -30,7 +32,7 @@ export default function LandingPage() {
             <section className='flex gap-3 items-baseline'>
                 <a href="" className='text-red-500 font-semibold hover:text-red-700 transition duration-300'>Login</a>
                 <a href="" className='bg-red-500 px-2 py-1 text-white font-semibold rounded-lg hover:bg-red-700 transition duration-300'>Sign up</a>
-            </section> 
+            </section>  */}
         </nav>
 
 
@@ -46,15 +48,18 @@ export default function LandingPage() {
         interval={5000} // 5 seconds per slide
       >
         <div className="carousel-slide" style={carouselContainerStyle}>
-          <div className="w-full h-full  text-white flex items-center">
+          <div className="w-full  h-full  text-white flex justify-center items-center">
             <div className="flex-1 text-center p-6">
               <h1 className="text-6xl text-gray-600 font-semi-bold mr-4"> Welcome to <span className='text-red-500'>Abscrow</span>: Your Trusted Transaction Partner</h1>
               <p className="text-gray-400 text-lg mt-4">
               Connect with the world and make transactions hassle-free with Abscrow's blockchain innovation.
               </p>
-              <button className="bg-red-600 hover:bg-red-800 text-white py-2 px-4 mt-6  font-semibold">
-                Learn More
-              </button>
+              
+              <section className='flex gap-4'>
+                <a href="https://abscrow.vercel.app/createStore" className='ml-16 rounded-md bg-red-600 hover:bg-red-800 text-white py-2 px-4 mt-6  font-semibold'>Create a Store</a>
+                <a href="https://abscrow.vercel.app/stores" className='border rounded-md border-red-600  hover:bg-red-100 text-red-600 py-2 px-4 mt-6  font-semibold'>Browse stores</a>
+              </section>
+             
             </div>
             <div className="flex-1">
             <img src={Security} className='object-contain w-full h-full' alt="SVG 1" />
@@ -68,9 +73,10 @@ export default function LandingPage() {
               <p className="text-gray-400 text-lg mt-4 line-clamp-3 mx-4">
               Experience the future of online payments with Abscrow. Your transactions are protected with cutting-edge blockchain technology
               </p>
-              <button className="bg-red-600 hover:bg-red-800 text-white py-2 px-4 mt-6  font-semibold">
-              Get Started
-              </button>
+              <section className='flex gap-4'>
+                <a href="https://abscrow.vercel.app/createStore" className='ml-16 rounded-md bg-red-600 hover:bg-red-800 text-white py-2 px-4 mt-6  font-semibold'>Create a Store</a>
+                <a href="https://abscrow.vercel.app/stores" className='border rounded-md border-red-600  hover:bg-red-100 text-red-600 py-2 px-4 mt-6  font-semibold'>Browse stores</a>
+              </section>
             </div>
 
             <div className="flex-1">
@@ -87,9 +93,10 @@ export default function LandingPage() {
               <p className="text-gray-400 text-lg mt-4 line-clamp-3 mx-4">
               Discover a new era of secure and efficient online payments through the power of Abscrow's blockchain technology. Your transactions are safeguarded with the latest innovations
               </p>
-              <button className="bg-red-600 hover:bg-red-800 text-white py-2 px-4 mt-6  font-semibold">
-              Explore Features
-              </button>
+              <section className='flex gap-4'>
+                <a href="https://abscrow.vercel.app/createStore" className='ml-16 rounded-md bg-red-600 hover:bg-red-800 text-white py-2 px-4 mt-6  font-semibold'>Create a Store</a>
+                <a href="https://abscrow.vercel.app/stores" className='border rounded-md border-red-600  hover:bg-red-100 text-red-600 py-2 px-4 mt-6  font-semibold'>Browse stores</a>
+              </section>
             </div>
             <div className="flex-1">
                 <img src={Launch} className='object-contain w-full h-full' alt="SVG 1" />

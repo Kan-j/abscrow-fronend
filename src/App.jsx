@@ -12,12 +12,7 @@ function App() {
 
   return (
     <>
-      {/* <SignUp/> */}
-      {/* <Login/> */}
       <LandingPage/>
-      {/* <AdminPanel/> */}
-      {/* <AdminOrders/> */}
-      {/* <TransactionProgress glowSection="Processing"/> */}
     </>
   )
 }
